@@ -19,6 +19,9 @@ function Menu() {
             <Nav.Link href={'/loop'}>Loop</Nav.Link>
             <Nav.Link href={'/counter'}>Counter</Nav.Link>
             <Nav.Link href="/datatype">Data Type</Nav.Link>
+            <Nav.Link href="/count2">Counter 2</Nav.Link>
+            <Nav.Link href="/fetchdata">Fetch Data</Nav.Link>
+            <Nav.Link href="/fetchdatereducer">Fetch Data Reducer</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

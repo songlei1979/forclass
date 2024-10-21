@@ -10,6 +10,9 @@ import Menu from "./components/Menu";
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Counter from "./components/Counter";
 import Datatype from "./components/Datatype";
+import Counter2 from "./components/Counter2";
+import FetchData from "./components/FetchData";
+import FetchDataReducer from "./components/FetchDataReducer";
 
 function App() {
 
@@ -37,6 +40,9 @@ function App() {
                     <Route path="/form" element=<Form/> />
                     <Route path={'/counter'} element={<Counter/>}/>
                     <Route path={'/datatype'} element={<Datatype/>}/>
+                    <Route path={'/count2'} element={<Counter2/>}/>
+                    <Route path={'/fetchdata'} element={<FetchData/>}/>
+                    <Route path={'/fetchdatereducer'} element={<FetchDataReducer/>}/>
                 </Routes>
             </Router>
         </div>
