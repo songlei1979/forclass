@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
+import {baseUrl} from "../constants";
 
 function Login(props) {
     const [username, setUsername] = useState("")
@@ -31,7 +32,7 @@ function Login(props) {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'http://127.0.0.1:8000/api-token-auth/',
+            url: baseUrl + 'api-token-auth/',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -54,7 +55,7 @@ function Login(props) {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'http://127.0.0.1:8000/logout/',
+            url: baseUrl + 'logout/',
             headers: {
                 'Authorization': 'token '+token
             }

@@ -14,6 +14,8 @@ import Counter2 from "./components/Counter2";
 import FetchData from "./components/FetchData";
 import FetchDataReducer from "./components/FetchDataReducer";
 import Login from "./components/Login";
+import Posts from "./components/Posts";
+import PostDetail from "./components/PostDetail";
 
 function App() {
 
@@ -45,7 +47,9 @@ function App() {
                     <Route path={'/fetchdata'} element={<FetchData/>}/>
                     <Route path={'/fetchdatereducer'} element={<FetchDataReducer/>}/>
                     <Route path={'/login'} element={<Login/>}/>
-                    </Routes>
+                    <Route path={'/posts'} element={<Posts/>}  />
+                    <Route path={'/post_detail'} element={<PostDetail/>}  />
+                </Routes>
             </Router>
         </div>
     );

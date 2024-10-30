@@ -15,6 +15,7 @@ function Menu() {
           <Nav className="me-auto">
             <Nav.Link href={'/'}>Home</Nav.Link>
             <Nav.Link href={'/login'}>Login</Nav.Link>
+            <Nav.Link href={'/posts'}>Posts</Nav.Link>
 
             {/*<Nav.Link href={'/second'}>Second</Nav.Link>*/}
             {/*<Nav.Link href={'/form'}>Form</Nav.Link>*/}
