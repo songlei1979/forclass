@@ -13,6 +13,7 @@ import Datatype from "./components/Datatype";
 import Counter2 from "./components/Counter2";
 import FetchData from "./components/FetchData";
 import FetchDataReducer from "./components/FetchDataReducer";
+import Login from "./components/Login";
 
 function App() {
 
@@ -43,7 +44,8 @@ function App() {
                     <Route path={'/count2'} element={<Counter2/>}/>
                     <Route path={'/fetchdata'} element={<FetchData/>}/>
                     <Route path={'/fetchdatereducer'} element={<FetchDataReducer/>}/>
-                </Routes>
+                    <Route path={'/login'} element={<Login/>}/>
+                    </Routes>
             </Router>
         </div>
     );

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import SecondComponent from "./SecondComponent";
 
 class FirstComponent extends Component {
     clickMe() {
@@ -13,6 +14,7 @@ class FirstComponent extends Component {
                 <p>Name: {this.props.name}</p>
                 <p>Age: {this.props.age}</p>
                 <button onClick={this.props.clickMe}>Click Me</button>
+                <SecondComponent name={this.props.name} age={this.props.age}/>
             </div>
         );
     }
